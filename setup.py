@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="spell_corrector_pt",
-    version="0.0.1",
+    version="0.0.2",
     author="Samuel Heinrichs",
     author_email="ti.samuelh@gmail.com",
     description="This is a simple tool to correct portuguese misspells automatically.",
