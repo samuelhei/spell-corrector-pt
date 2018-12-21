@@ -11,9 +11,6 @@ Correct automatically words in Portuguese.
 - Specify the path to save the model to reuse afterward.
 - Load the Model and correct the words (check out [example.py](https://github.com/samuelhei/spell-corrector-pt/blob/master/example.py))
 
-# Instalation
-
-
 # How the model works (high level)
 - Preprocess the dictionary removing accentuation and transform to lowercase
 - Extract char n_grams from the dictionary
