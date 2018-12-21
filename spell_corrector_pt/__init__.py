@@ -4,11 +4,10 @@ import os
 import itertools
 import numpy as np
 import scipy
+import pickle
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
-from joblib import dump, load
 
 class PathNotExistsException(Exception):
     pass
@@ -18,7 +17,7 @@ class NotTrainedModelException(Exception):
 
 class SpellCorrector:
 
-    def __init__(self, dictionary=[], ngram_range=(2,4),base_path='.'):
+    def __init__(self, dictionary=[], ngram_range=(1,3)):
         self.dictionary = dictionary
         self.ngram_range = ngram_range
         self.base_path = base_path
